@@ -89,7 +89,7 @@ fun ProgressCard(
             )
             Spacer(modifier = Modifier.height(8.dp))
             LinearProgressIndicator(
-                progress = { progress },
+                progress = progress.coerceIn(0f, 1f),
                 modifier = Modifier.fillMaxWidth(),
                 color = if (progress > 1f) MaterialTheme.colorScheme.error
                          else MaterialTheme.colorScheme.primary

@@ -50,7 +50,7 @@ import com.healthtracker.ui.components.PRBadge
 import com.healthtracker.util.DateUtils
 import kotlinx.coroutines.flow.Flow
 
-@OptIn(ExperimentalLayoutApi::class)
+@OptIn(ExperimentalLayoutApi::class, ExperimentalMaterial3Api::class)
 @Composable
 fun LiftsScreen(
     liftEntries: Flow<List<LiftEntry>>,
